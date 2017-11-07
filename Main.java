@@ -11,14 +11,20 @@ public class Main{
 	
 	int currentYear=2017;
 	int currentMonth=11;
-	int currentDay=13;
+	int currentDay=6;
 	
 	int age=(currentYear-year);
 	
 	if(currentMonth<month){
 		--age;
+	}else if(currentMonth==month){
+		if(currentDay<day){
+			--age;
+		}
 	}
+	
 	System.out.println("You are "+age+" years old.");
+	
 	}
 }
 
